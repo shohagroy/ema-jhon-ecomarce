@@ -1,0 +1,46 @@
+
+
+.card{
+    height: 510px;
+    width: 300px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.card img{
+    height: 286px;
+    width: 286px;
+    margin: 7px;
+    border-radius: 8px;
+}
+.card-info{
+    margin: 0 10px;
+}
+
+.card-name{
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.card-footer-text{
+    margin-top: 15px;
+}
+
+.card-footer-text p{
+    margin: 5px;
+}
+
+.card button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: #FFE0B3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card button:hover{
+    background-color: orange;
+}
