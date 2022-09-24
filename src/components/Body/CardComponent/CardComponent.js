@@ -3,9 +3,17 @@ import './CardComponent.css'
 
 const CardComponent = props => {
 
-    const {id, name, seller, price, ratings, img} = props.cardData
+    const {name, seller, price, ratings, img} = props.cardData
+
+    const addToCart = () =>{
+        console.log('add button click')
+    }
+    
+    
 
     return (
+        
+        
         <div className='card'>
             <img src={img} alt="" />
             <div className='card-info'>
@@ -18,9 +26,9 @@ const CardComponent = props => {
                     <p>Rating: {ratings} Star</p>
                 </div>
             </div>
-            <button>Add to Cart</button>
+            <button> Add to Cart </button>
         </div>
     );
 };
 
-export default CardComponent;<h1>this is card component</h1>
+export default CardComponent;

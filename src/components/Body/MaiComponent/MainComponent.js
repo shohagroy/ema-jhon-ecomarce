@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CardComponent from '../CardComponent/CardComponent';
-import CartComponent from '../CardComponent/CartComponent/CartComponent';
+import CartComponent from '../CartComponent/CartComponent';
 import './MainComponent.css'
 
 const MainComponent = () => {
@@ -16,7 +16,10 @@ const MainComponent = () => {
         <div className='mian-container'>
             <div className='card-container'>
                 {
-                    products.map(product => <CardComponent cardData={product} />)
+                    products.map(product => <CardComponent 
+                        cardData={product} 
+                        key = {product.id}
+                        />)
                 }
                 
             </div>
