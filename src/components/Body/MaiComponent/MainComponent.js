@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CardComponent from '../CardComponent/CardComponent';
+import CartComponent from '../CardComponent/CartComponent/CartComponent';
 import './MainComponent.css'
 
 const MainComponent = () => {
@@ -20,8 +21,7 @@ const MainComponent = () => {
                 
             </div>
             <div className='cart-container'>
-                <p>this is card section</p>
-
+                <CartComponent/>
             </div>
             
         </div>
