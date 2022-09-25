@@ -16,3 +16,50 @@
 .cart-container{
     background-color: #FFE0B3;
 }
+
+
+.cart-section{
+    position: sticky;
+    top: 20px;
+}
+
+.cart-section h5{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-info{
+    margin: 30px;
+}
+
+.cart-info p{
+    font-size: 17px
+}
+
+.cart-info h6{
+    font-size: 22px;
+}
+
+.cart-button{
+    width: 90%;
+    margin: auto;
+}
+
+.cart-button button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.clear-btn{
+    background-color: #FF3030;
+}
+
+.review-btn{
+    background-color: #FF9900;
+}

@@ -3,13 +3,10 @@ import './CardComponent.css'
 
 const CardComponent = props => {
 
-    const {name, seller, price, ratings, img} = props.cardData
+    const {handeler, cardData} = props
 
-    const addToCart = () =>{
-        console.log('add button click')
-    }
     
-    
+    const {name, seller, price, ratings, img} = cardData
 
     return (
         
@@ -26,7 +23,7 @@ const CardComponent = props => {
                     <p>Rating: {ratings} Star</p>
                 </div>
             </div>
-            <button> Add to Cart </button>
+            <button onClick={()=>handeler(cardData)}> Add to Cart </button>
         </div>
     );
 };
