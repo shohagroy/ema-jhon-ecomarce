@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import CardComponent from '../CardComponent/CardComponent';
-import './MainComponent.css'
+import './MainComponent.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faArrowRightLong, faDeleteLeft, faRemove, faTrash } from '@fortawesome/free-solid-svg-icons';
+ 
 
 const MainComponent = () => {
 
@@ -58,8 +62,9 @@ const MainComponent = () => {
                     </div>
 
                     <div className='cart-button'>
-                        <button className='clear-btn'>Clear Cart</button>
-                        <button className='review-btn'>Review Cart</button>
+                        <button className='clear-btn'>Clear Cart <FontAwesomeIcon icon={faTrash}/></button>
+                        <button className='review-btn'>Review Cart
+                        <FontAwesomeIcon icon={faArrowRight}/></button>
                     </div>
                 
                 </div>
